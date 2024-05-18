@@ -1,0 +1,78 @@
+\documentclass{article}
+
+\usepackage[margin=1in]{geometry}
+\usepackage{amsmath}
+\usepackage{hyperref}
+\usepackage{graphicx}
+\usepackage{enumitem}
+\usepackage{xcolor}
+\usepackage{amssymb}
+\usepackage{microtype}
+\usepackage{titlesec}
+\usepackage{tcolorbox}
+\usepackage{booktabs}
+\usepackage[most]{tcolorbox}
+
+\titleformat{\section}{\large\bfseries\color{blue}}{\thesection}{1em}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{teal}}{\thesubsection}{1em}{}
+
+\definecolor{lightblue}{RGB}{173, 216, 230}
+\definecolor{lightgrey}{RGB}{240, 240, 240}
+
+\hypersetup{
+    colorlinks=true,
+    linkcolor=blue,
+    filecolor=magenta,
+    urlcolor=cyan,
+}
+
+\title{\textbf{Distributed Systems: An Introduction}}
+\author{Aayush Adhikari}
+\date{\today}
+
+\begin{document}
+\maketitle
+
+\section{Introduction}
+A \textbf{distributed system} is a collection of independent computers that work together to achieve a common goal. The computers communicate with each other through message passing or events.
+
+\textbf{Distributed computing} is a type of computing that takes place on distributed systems. It involves building and designing computing models for distributed systems and developing algorithms to solve problems related to such systems.
+
+\section{Characteristics of Distributed Systems}
+\begin{itemize}
+    \item No shared clock: Each computer has its own clock, making coordination difficult.
+    \item No shared memory: Each computer has its own memory, preventing direct memory access.
+    \item Concurrency: Multiple tasks can be executed simultaneously.
+    \item Heterogeneity: Computers in the system can be different from each other.
+    \item Loose coupling: Computers are loosely coupled and not tightly integrated.
+\end{itemize}
+
+\section{Basic Concepts of Distributed Computing}
+\begin{description}[itemsep=5pt, parsep=0pt]
+    \item[Nodes:] The individual computers in a distributed system.
+    \item[Resources:] Assets that can be accessed remotely by nodes (e.g., data, storage).
+    \item[Distribution Transparency:] Hiding the complexities of the system from users.
+    \item[Middleware:] Software layer facilitating communication and management between nodes.
+    \item[Concurrency:] Ability of the system to execute multiple tasks simultaneously.
+    \item[Coordination \& Synchronization:] Techniques to ensure cooperation between tasks.
+    \item[Architectural Models:] Define how nodes are organized (e.g., client-server, peer-to-peer).
+    \item[Global State:] The collective state of all nodes in the system.
+\end{description}
+
+\section{Advantages of Distributed Systems}
+\begin{itemize}
+    \item Reliability: Can continue operating even if one or more computers fail.
+    \item Scalability: Can easily scale by adding more computers.
+    \item Resource sharing: Resources can be shared between computers.
+    \item Increased performance: Tasks can be distributed among multiple computers.
+\end{itemize}
+
+\section{Disadvantages of Distributed Systems}
+\begin{itemize}
+    \item Failure detection: Difficult to detect failures in the system.
+    \item Redundancy: Multiple computers may have copies of the same data.
+    \item Consistency: Difficult to ensure all computers have the same data.
+    \item Performance bottlenecks: Can occur due to slow network or resource competition.
+\end{itemize}
+
+\end{document}
